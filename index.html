@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aam Saman — Demo Store</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">🛍️ Aam Saman</a>
+      <nav>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+      </nav>
+      <button id="cart-btn" class="cart-btn" aria-label="Open cart">
+        🛒 Cart <span id="cart-count" class="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Everyday essentials, delivered.</h1>
+      <p>A tiny demo storefront — built and pushed to GitHub entirely by Muse.</p>
+      <a href="#products" class="btn">Shop now</a>
+    </div>
+  </section>
+
+  <main class="container">
+    <h2 id="products">Products</h2>
+    <div id="product-grid" class="product-grid"></div>
+
+    <section id="about" class="about">
+      <h2>About this demo</h2>
+      <p>
+        This repo was created empty by Ahmed, then Muse wrote every file you see here
+        (HTML, CSS, JavaScript, README) and pushed them to GitHub in a single commit.
+        The cart below works with your browser's local storage — add items, remove them,
+        and try the checkout button.
+      </p>
+    </section>
+  </main>
+
+  <aside id="cart-drawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-head">
+      <h3>Your cart</h3>
+      <button id="cart-close" class="icon-btn" aria-label="Close cart">✕</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-foot">
+      <div class="cart-total">Total: <strong id="cart-total">Rs 0</strong></div>
+      <button id="checkout-btn" class="btn btn-full">Checkout</button>
+    </div>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Demo storefront by Muse · Built with plain HTML, CSS &amp; JS</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
